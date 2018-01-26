@@ -1,0 +1,76 @@
+Problem Title: Graph Summaries
+
+Accepted Languages:
+
+- C++, Java, Python 2.7 and 3.4
+
+Submission:
+
+- Submit a single file containing your solution to the problem. It should
+output only the answer requested (NO DEBUG OUTPUT).
+
+Grading:
+
+20% - Code Quality
+40% - Big O (efficiency)
+40% - Correctness
+
+Description:
+
+For your birthday this year, your eccentric uncle has gifted you an undirected,
+unweighted simple graph! When it comes time to write thank-you notes to your
+uncle, you want to show him that you've actually examined the graph, and want to
+include some details about the graph in your note.
+
+To show that you have a high level understanding of the graph, be sure to tell
+your uncle the number of connected components in the graph. To show him that
+you've really looked at one area closely, you also want to tell him the number
+of nodes reachable from his favorite start node S by taking a path of at most
+P edges.
+
+Rules:
+
+Each input file will begin with a single line T, the total number of test cases.
+Each test case begins with a line with four space separated integers, N M S P,
+the number of nodes, the number of edges, the start node, and the furthest
+distance to examine from the start node respectively. Then M lines follow, each
+representing a single edge. Those lines have two space separated integers,
+U, V. This means that an edge connects nodes U and V.
+
+Output:
+
+For each test case, print 2 space separated integers. The first integer is the
+number of connected components in the gift graph. The second integer is the
+number of nodes reachable from your uncle's favorite start node.
+
+Constraints:
+
+1 <= N <= 100,000
+0 <= M <= min(200,000, N * (N - 1))
+1 <= U, V, S <= N
+0 <= P <= 200,000
+
+U is not equal to V
+There is never more than 1 edge between the same pair of nodes
+
+Input (read from standard in):
+2
+3 2 1 1
+1 2
+1 3
+6 6 3 1
+1 3
+2 6
+3 5
+5 4
+3 4
+1 5
+
+Output (print to standard out):
+1 3
+2 4
+
+Explanation:
+The first graph has just one component. All 3 nodes are reachable from node 1.
+
+The second graph has two components (2 and  are by themselves). 3 is connected to 1, 5, and 4, so there are 4 nodes reachable from 3 using at most 1 edge.
