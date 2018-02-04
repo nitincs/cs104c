@@ -1,0 +1,79 @@
+Problem Title: Commute
+
+Accepted Languages:
+
+- C++, Java, Python 2.7 and 3.4
+
+Submission:
+
+- Submit a single file containing your solution to the problem. It should
+output only the answer requested (NO DEBUG OUTPUT).
+
+Grading:
+
+20% - Code Quality
+40% - Big O (efficiency)
+40% - Correctness
+
+Description:
+
+Daylight savings time just started, and you forgot to change your clock! Since
+your alarm didn't go off, you're running late for work. While you're brushing
+your teeth, you're thinking about the best way to get there.
+
+The city is a collection of N intersections (numbered from 1 to N) connected by
+M one-way roads, which vary in speed limit and length. Your house is located at
+intersection 1, and your workplace is at intersection N. Given descriptions of
+all the roads, can you figure out how long it will take you to get to work if
+you take the optimal route and don't speed? Round your answer to the nearest
+hour.
+
+Rules:
+
+The first line of the input contains a single integer T, the number of test
+cases. T test cases follow.
+
+Each test case begins with two space-separated integers, N and M. The next M
+lines describe the roads, each containing 4 integers: U (the intersection where
+the road starts), V (the intersection where the road ends), S (the speed limit
+on the road, in mph), and L (the length of the road, in miles).
+
+Output:
+
+For each test case, print a single integer: the number of hours it will take
+you to get to work, rounded to the nearest hour. Do not print a decimal point.
+
+Constraints:
+
+1 <= T <= 50
+1 <= N <= 15,000
+1 <= M <= 15,000
+1 <= U, V <= N
+1 <= S <= 60
+1 <= L <= 100
+
+It is guaranteed that there exists a path from intersection 1 to intersection
+N.
+
+Input (read from standard in):
+1
+4 5
+1 2 10 10
+2 3 5 10
+1 3 2 10
+3 4 60 60
+1 2 5 10
+
+Output (print to standard out):
+4
+
+Explanation:
+
+We can get from intersection 1 to intersection 2 in 1 hour, then from 2 to 3 in
+another 2 hours, then from 3 to 4 in another hour, for a total of 4 hours.
+
+Note that in some test cases the shortest path may not be integer length, and
+you need to round it to the nearest integer.
+
+Note also that there can be multiple roads connecting the same pair of
+intersections, with different lengths and speed limits.

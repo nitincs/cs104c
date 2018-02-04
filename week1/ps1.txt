@@ -73,4 +73,4 @@ Output (print to standard out):
 Explanation:
 The first graph has just one component. All 3 nodes are reachable from node 1.
 
-The second graph has two components (2 and  are by themselves). 3 is connected to 1, 5, and 4, so there are 4 nodes reachable from 3 using at most 1 edge.
+The second graph has two components (2 and 6 are by themselves). 3 is connected to 1, 5, and 4, so there are 4 nodes reachable from 3 using at most 1 edge.
