@@ -1,0 +1,84 @@
+Problem Title: Video Game
+
+Accepted Languages:
+
+- C++, Java, Python 2.7 and 3.4
+
+Submission:
+
+- Submit a single file containing your solution to the problem. It should
+output only the answer requested (NO DEBUG OUTPUT).
+
+Grading:
+
+20% - Code Quality
+40% - Big O (efficiency)
+40% - Correctness
+
+Description:
+
+You're testing a new video game. In this game, there are N rooms the player can
+visit and M directed passageways between rooms. The player starts in room 1 and
+wants to get to room N.
+
+The player starts with K health, and each passageway has some monsters the
+player must defeat as well as some health packs with which the player can heal;
+the net change in health the player receives by going through passageway i is
+C_i. This value may be positive, negative, or zero.
+
+Some shortcuts were taken in the development game: no state is stored about
+monsters that have been defeated, or which health packs have been used. Thus,
+if the player uses the same passageway more than once, he/she receives the
+associated change in health more than once as well.
+
+As a tester, you want to know the maximum amount of health the player can have
+when he/she arrives in room N. Note that the player can visit room N more than
+once, and the player's health is allowed to be zero or even negative at any
+point (it's a very poorly designed game!).
+
+Rules:
+
+The first line of input contains a single integer T, the number of test cases.
+T test cases follow.
+
+The first line of each test case contains three space-separated integers N, M,
+and K, the number of rooms, number of passageways, and starting health of the
+player, respectively. The following M lines each contain three space-separated
+integers U_i, V_i, and C_i, denoting the starting room, ending room, and net
+health change for passageway i respectively.
+
+Output:
+
+For each test case, output a single line. If it is not possible for the player
+to reach room N, print -1. If it is possible for the player to reach room N
+with unlimited health (that is, for any positive health H, we can find a path
+the player can take that gives an ending health >= H), then print "infinity"
+(without the quotes). Otherwise, print a single integer: the maximum amount of
+health the player can have at room N.
+
+Constraints:
+
+1 <= T <= 10
+1 <= N <= 10^3
+1 <= M <= 10^3
+0 <= K <= 10^3
+1 <= U_i, V_i <= N
+-10^3 <= C_i <= 10^3
+
+Input (read from standard in):
+
+3
+2 1 0
+2 1 500
+2 1 5
+1 2 5
+3 3 0
+1 2 5
+2 3 5
+3 1 -5
+
+Output (write to standard out):
+
+-1
+10
+infinity
