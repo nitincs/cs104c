@@ -1,0 +1,3 @@
+http://codeforces.com/problemset/problem/165/B
+http://codeforces.com/problemset/problem/706/B
+http://codeforces.com/problemset/problem/448/D
