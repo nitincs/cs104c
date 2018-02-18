@@ -1,0 +1,63 @@
+Problem Title: Finding Writers
+
+Accepted Languages:
+
+- C++, Java, Python 2.7 and 3.4
+
+Submission:
+
+- Submit a single file containing your solution to the problem. It should
+output only the answer requested (NO DEBUG OUTPUT).
+
+Grading:
+
+20% - Code Quality
+40% - Big O (efficiency)
+40% - Correctness
+
+Description:
+
+Arnav is setting up a meeting of programming contest writers. At the start of 
+the meeting, every pair of contest writers shakes hands. Each handshake takes 
+1 second.
+
+He wants to get as many writers as possible to make the work on any individual
+not as bad, but if there's too many people, then introductions take more time.
+Furthermore, for every X people (rounded down), he has to waste k more seconds
+finding a larger room.
+
+Given an upper bound on the amount of time Arnav wants to spend on this, compute
+the maximum number of authors that Arnav can invite.
+
+HINT: The number of handshakes in a group of n people is n * (n - 1) / 2.
+
+Rules:
+
+Each input file will begin with a number T, the number of test cases.
+
+Each test case will consist of three space separated numbers $N X K$, the
+maximum amount of time Arnav wants to spend on handshakes and room finding, the
+intervals at which Arnav needs to find larger rooms, and how much extra time it
+takes for him to find larger rooms.
+
+Output:
+
+Print out the maximum number of people that Arnav can invite.
+
+Constraints:
+0 <= N <= 10^18
+1 <= X <= 10^9
+0 <= K <= 10^9
+K * N <= 10^18
+
+Input (read from standard in):
+
+3
+15 1 0
+10 3 2
+12345123451234512 281 120
+
+Output (write to standard out):
+6
+4
+157131304
