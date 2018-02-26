@@ -1,0 +1,70 @@
+Problem Title: Rock Fight
+
+Accepted Languages:
+
+- C++, Java, Python 2.7 and 3.4
+
+Submission:
+
+- Submit a single file containing your solution to the problem. It should
+output only the answer requested (NO DEBUG OUTPUT).
+
+Grading:
+
+20% - Code Quality
+40% - Big O (efficiency)
+40% - Correctness
+
+Description:
+
+Ruth and Bleminda are playing a game with their rock collections. Each person
+owns a set of rocks. The game works as follows: each person chooses a rock from
+their collection and places it on the table. The person with the smaller rock
+has their rock captured. This continues until both players have used all their
+rocks. A rock may not be used in more than one round.
+
+Bleminda spent hours figuring out the optimal order to play her rocks, but
+accidentally lost her ordered list of moves. Ruth found Bleminda's moves and
+wants to minimize the sum of her captured pieces.
+
+Rules:
+
+The first line of input contains a single integer T, the number of test cases.
+T test cases follow.
+
+Each test case begins with an integer N, the number of rocks that Ruth and
+Bleminda have respectively. The next line contains N space separated integers,
+the weights of Ruth's rocks. The line after that contains N space separated
+integers, the weights of Bleminda's rocks. The weights of Bleminda's rocks are
+given in the order they will be played.
+
+Output:
+
+For each test case, output a single line containing a single integer: the
+minimum amount of weight that is captured from Ruth.
+
+Constraints:
+
+1 <= T <= 25
+1 <= N <= 10000
+1 <= weight of a rock <= 10^9
+
+Input (read from standard in):
+2
+3
+2 5 1
+6 1 4
+4
+1 2 3 4
+7 7 7 7
+
+Output (print to standard out):
+1
+10
+
+Explanation:
+
+In the first game, Ruth should play the 1 against the 6, the 2 against the 1,
+and the 5 against the 4. Only the 1 rock is captured then.  In the second game,
+no matter what order Ruth plays her rocks, she will lose every single one. Her
+rocks have a total weight of 10.
