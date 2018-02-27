@@ -27,6 +27,8 @@ Bleminda spent hours figuring out the optimal order to play her rocks, but
 accidentally lost her ordered list of moves. Ruth found Bleminda's moves and
 wants to minimize the sum of her captured pieces.
 
+If both players play a rock with the same size, then Bleminda wins the rock.
+
 Rules:
 
 The first line of input contains a single integer T, the number of test cases.
